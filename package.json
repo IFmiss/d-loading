@@ -1,11 +1,15 @@
 {
   "name": "d-loading",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "d-loading",
-  "main": "webpack.config.js",
+  "main": "/src/lib/d-loading.js",
   "dependencies": {
     "hoek": "^5.0.3",
     "wx-audio": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/ifmiss/d-loading.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

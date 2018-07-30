@@ -16,7 +16,6 @@ const resolve = function (dir) {
 module.exports = {
 	entry: {
 		index: './src/index.js',
-		about: './src/pages/about/about.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
