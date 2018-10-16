@@ -15,7 +15,7 @@ body{
 	@include flex-direction(column);
 	.title{
 		font-size: 42px;
-		@include colortext-l(#B32FC3, #D1A22F)
+		@include colortext-l(#B32FC3, #D1A22F);
 		@include inline-block;
 		margin-top: 0;
 	}
@@ -33,5 +33,21 @@ body{
 			font: $font_auto;
 			font-size:14px;
 		}
+	}
+}
+
+.loading-config{
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+	span{
+		display: block;
+		width: 90px;
+		line-height: 30px;
+		text-align: center;
+		border: 2px solid #aaa;
+		color: #fff;
+		margin: 0 10px;
+		cursor: pointer;
 	}
 }

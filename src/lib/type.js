@@ -71,8 +71,8 @@ function defaultLoadingEle (mainColor, auxiliaryColor) {
  * @return {function}             // 返回一个dom文本
  */
 
- // 橙黄色 mainColor:#f32424;  auxiliaryColor: #f97b11;  otherAuxiliaryColor:#ffc600;
- // 粉色 mainColor:#ff5591;  auxiliaryColor: #ffa6c7;  otherAuxiliaryColor:#ffedf7;
+// 橙黄色 mainColor:#f32424;  auxiliaryColor: #f97b11;  otherAuxiliaryColor:#ffc600;
+// 粉色 mainColor:#ff5591;  auxiliaryColor: #ffa6c7;  otherAuxiliaryColor:#ffedf7;
 function circleLoadingEle (mainColor, auxiliaryColor, otherAuxiliaryColor) {
   return `<svg class="circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="200px" height="200px"  viewBox="0 0 200 200"
           xml:space="preserve">
