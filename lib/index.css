@@ -1,0 +1,60 @@
+.d-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  background: transparent; }
+  .d-loading.fix-loading {
+    position: fixed; }
+  .d-loading.fade {
+    transition: all 0.3s; }
+  .d-loading.show {
+    opacity: 1;
+    visibility: visible; }
+    .d-loading.show.fade {
+      transition: all 0.3s; }
+  .d-loading .d-loading-content {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 3px;
+    box-sizing: border-box; }
+    .d-loading .d-loading-content .d-loading-svg {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .d-loading .d-loading-content .d-loading-svg svg {
+        width: 100%;
+        height: 100%; }
+        .d-loading .d-loading-content .d-loading-svg svg.default {
+          width: 40%;
+          height: 40%; }
+        .d-loading .d-loading-content .d-loading-svg svg.circle {
+          width: 40%;
+          height: 40%; }
+    .d-loading .d-loading-content .d-loading-name {
+      width: 100%;
+      margin: 0;
+      padding: 2px 5px;
+      text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #f1f1f1;
+      font-size: 14px;
+      box-sizing: border-box; }

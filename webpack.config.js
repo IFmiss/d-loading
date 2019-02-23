@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const extractSass = new ExtractTextPlugin({
-    filename: "css/[name]-[contenthash].css",
+    filename: "[name].css",
     disable: process.env.NODE_ENV === "development"
 });
 
@@ -15,12 +15,14 @@ const resolve = function (dir) {
 
 module.exports = {
 	entry: {
-		index: './src/index.js',
+		// index: './src/index.js',
+		index: './src/lib/d-loading.js',
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'lib'),
 		publicPath: '',
-		filename: '[name]-[hash].js'
+		filename: '[name].js',
+		libraryTarget: 'umd'
 	},
 	module: {
 		rules: [
@@ -90,11 +92,11 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin ({
-			filename: 'index.html',
-			template: 'index.html',
-			inject: true
-		}),
+		// new HtmlWebpackPlugin ({
+		// 	filename: 'index.html',
+		// 	template: 'index.html',
+		// 	inject: true
+		// }),
 		extractSass
 	],
 	devServer: {

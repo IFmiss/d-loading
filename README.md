@@ -6,12 +6,13 @@ QQ交流群： 424418160
 ### 使用方式
 引入
 <pre>
-npm install d-loading
+npm install @dw/d-loading
 </pre>
 
 调用
 <pre>
-import Loading from 'd-loading'
+import Loading from '@dw/d-loading'
+import '@dw/lib/index.css'
 
 let dloading = new Loading(document.body)
 dloading.showLoading()
