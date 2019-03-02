@@ -1,5 +1,4 @@
 # d-loading
-QQ交流群： 424418160
 
 
 一个通用的loading效果
