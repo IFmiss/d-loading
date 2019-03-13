@@ -11,7 +11,7 @@ npm install @dw/d-loading
 调用
 <pre>
 import Loading from '@dw/d-loading'
-import '@dw/lib/index.css'
+import '@dw/d-loading/lib/index.css'
 
 let dloading = new Loading(document.body)
 dloading.showLoading()
